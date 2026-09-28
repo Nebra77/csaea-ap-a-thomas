@@ -13,7 +13,8 @@ public class Tree{
     private boolean hasFruit;
     private String season;
     private String fruit;
-    private String type;
+    private int numFruits;
+    private String treeType;
 
     public Tree(boolean isAlive, int yearsLived, String leafColor, String season, boolean hasFruit) {
         this.isAlive = isAlive;
@@ -45,6 +46,7 @@ public class Tree{
         numBranches --;
         System.out.println("There are now " + numBranches + " branches left on the tree");
     }
+    
     public void grow() {
         numBranches ++;
         numLeaves ++;
@@ -56,6 +58,11 @@ public class Tree{
     }
     public void age() {
         System.out.println("This tree is " + yearsLived + " old"); 
+    }
+    public void changeFruit(String newFruit) { 
+
+        fruit = newFruit;
+        System.out.println(newFruit);
     }
 
     }

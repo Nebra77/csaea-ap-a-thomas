@@ -9,6 +9,7 @@ public class TreeTester{
         one.age();
         two.grow();
         one.yearPassed();
+        one.changeFruit("pear");
 
 
 
